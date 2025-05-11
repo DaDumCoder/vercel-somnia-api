@@ -1,20 +1,28 @@
 const { ethers } = require("ethers");
 
-const RPC_URL = "https://rpc.soneium.org";
+const RPC_URL = "https://rpc.ankr.com/somnia_testnet/6e3fd81558cf77b928b06b38e9409b4677b637118114e83364486294d5ff4811";
 const provider = new ethers.JsonRpcProvider(RPC_URL);
 
 // Contract addresses aligned with variables
 const contractMap = {
-  purchasedpoint: "0x155a0d960E76909905446118499Df6E0D0123122",
-  claimedpoints: "0xeb9415D0B989B18231E6977819c24DEF47c855A8",
-  snakeclaims: "0x0F733EF4fB81ccEE6C091aB20175811ed220e07B",
+  rpsPurch: "0xD1fC78e743B06F90E2B6A36022763d3E35160E0a",
+  rpsScore: "0x89cD2e2124b48737A220b7cA264b12a461e225d3",
+  rpsScoreTotal: "0x89cD2e2124b48737A220b7cA264b12a461e225d3",
+  snkA: "0x696ee979e8CC1D5a2CA7778606a3269C00978346",
+  snkScore: "0x5Cb442D8A3D7A7153BE93202e232919bE3C84C5A",
+  petScore: "0x754F014dFC79eE5b3bd4335637622Ce03f26bBd9",
+  petScoreTotal: "0x754F014dFC79eE5b3bd4335637622Ce03f26bBd9"
 };
 
 // Completion conditions for each Call
 const completionThresholds = {
-  purchasedpoint: 1000,
-  claimedpoints: 7500,
-  snakeclaims: 10000,
+  rpsPurch: 1000,
+  rpsScore: 2500,
+  rpsScoreTotal: 26000,
+  snkA: 10,
+  snkScore: 3500,
+  petScore: 700,
+  petScoreTotal: 7000
 };
 
 const ABI = ["function balanceOf(address) view returns (uint256)"];

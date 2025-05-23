@@ -5,9 +5,6 @@ const provider = new ethers.JsonRpcProvider(RPC_URL);
 
 // Contract addresses aligned with variables
 const contractMap = {
-  rpsPurch: "0xD1fC78e743B06F90E2B6A36022763d3E35160E0a",
-  rpsScore: "0x89cD2e2124b48737A220b7cA264b12a461e225d3",
-  rpsScoreTotal: "0x89cD2e2124b48737A220b7cA264b12a461e225d3",
   snkA: "0x696ee979e8CC1D5a2CA7778606a3269C00978346",
   snkScore: "0x5Cb442D8A3D7A7153BE93202e232919bE3C84C5A",
   dashScore: "0xcC54e8129EE25af45F1B489D8fD3960Ce54684eB",
@@ -16,12 +13,9 @@ const contractMap = {
 
 // Completion conditions for each Call
 const completionThresholds = {
-  rpsPurch: 1000,
-  rpsScore: 2500,
-  rpsScoreTotal: 26000,
   snkA: 10,
   snkScore: 3500,
-  dashScore: 700,
+  dashScore: 2000,
   dashScoreTotal: 7000
 };
 

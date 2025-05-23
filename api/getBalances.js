@@ -8,15 +8,13 @@ const contractMap = {
   snkA: "0x696ee979e8CC1D5a2CA7778606a3269C00978346",
   snkScore: "0x5Cb442D8A3D7A7153BE93202e232919bE3C84C5A",
   dashScore: "0xcC54e8129EE25af45F1B489D8fD3960Ce54684eB",
-  dashScoreTotal: "0xcC54e8129EE25af45F1B489D8fD3960Ce54684eB"
 };
 
 // Completion conditions for each Call
 const completionThresholds = {
   snkA: 10,
   snkScore: 3500,
-  dashScore: 2000,
-  dashScoreTotal: 7000
+  dashScore: 7000,
 };
 
 const ABI = ["function balanceOf(address) view returns (uint256)"];

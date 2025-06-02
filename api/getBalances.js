@@ -14,7 +14,7 @@ const contractMap = {
 const completionThresholds = {
   snkA: 10,
   snkScore: 3500,
-  dashScore: 7000,
+  dashScore: 3000,
 };
 
 const ABI = ["function balanceOf(address) view returns (uint256)"];
